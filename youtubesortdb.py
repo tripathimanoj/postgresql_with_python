@@ -128,14 +128,14 @@ if __name__ == "__main__":    # driver code
         if animal[0][-3:] == 'red' and animal[0][0:4] == 'ewes': # condition for ewes
             time.sleep(1)
             sort_animal.update_ewes_room(animal[0])   # calling update_ewes_room method
-            print("Successfully placed {animal[0} in desired place | getting real time graph data from database: ==>")
+            print(f"Successfully placed {animal[0]} in desired place | getting real time graph data from database: ==>")
             sort_animal.generate_pandas_graph()      # calling generate_pandas_graph method
             print('*'*40)
 
         elif animal[0][-5:] == 'green' and animal[0][0:4] == 'lamb':  # conditon for lambs
             time.sleep(1)
             sort_animal.update_lambs_room(animal[0])   # calling update_lambs_room method
-            print("Successfully placed {animal[0} in desired place | getting real time graph data from database: ==>")
+            print(f"Successfully placed {animal[0]} in desired place | getting real time graph data from database: ==>")
             sort_animal.generate_pandas_graph()        # calling generate_pandas_graph method
             print('*'*40)
 
